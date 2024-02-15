@@ -192,8 +192,8 @@ class PlayList {
             int minIndex = minIndex (i);
             if (minIndex != -1) {
                 Track temp = tracks[i];
-                tracks[minIndex] = temp;
                 tracks[i] = tracks[minIndex];
+                tracks[minIndex] = temp;
             }
         }
     }
